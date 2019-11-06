@@ -2,37 +2,78 @@ div h3 {
   margin: 0;
 }
 .rate {
-    float: left;
-    height: 5px;
-    padding: 3px;
+  float: left;
+  height: 5px;
+  padding: 3px;
 }
 .rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:15px;
-    color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 15px;
+  color: #cddee2;
+  /* 23527c */
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+  color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+  color: #c59b08;
+}
+.image {
+  width: 170px;
+  height: 270px;
+  border-radius: 3px;
+  box-shadow: #000;
+  background-color: #3079b9;
+  position: relative;
+}
+.contain {
+  width: 150px;
+  margin: 0px auto 2px;
+  position: relative;
+  height: 70px;
+
+}
+.image img {
+  width: 170px;
+  height: 200px;
+  border-radius: 3px 3px 0 0;
+  top: 0;
+  opacity: 0.9;
+}
+.details {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 5px auto 0;
+  padding: 0;
+}
+.rate {
+  position: absolute;
+  bottom: 18px;
+  margin: 0 auto;
+  padding: 0;
+}
+.details h4,
+.details p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
 }
