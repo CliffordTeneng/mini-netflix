@@ -45,7 +45,7 @@ div h3 {
   background-color: #3079b9;
   position: relative;
 }
-.contain {
+.contain, .well {
   width: 150px;
   margin: 0px auto 2px;
   position: relative;
